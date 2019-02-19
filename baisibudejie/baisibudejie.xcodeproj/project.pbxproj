@@ -19,6 +19,7 @@
 		1206EE3E221ADB38005D802D /* YJXNavigationC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1206EE3D221ADB38005D802D /* YJXNavigationC.m */; };
 		1206EE42221AFE70005D802D /* YJXTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1206EE41221AFE70005D802D /* YJXTabBar.m */; };
 		1206EE48221B026E005D802D /* UIView+YJXRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 1206EE47221B026E005D802D /* UIView+YJXRect.m */; };
+		121DEF4E221C1E9E00C2BE3F /* UIBarButtonItem+YJXItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 121DEF4D221C1E9E00C2BE3F /* UIBarButtonItem+YJXItem.m */; };
 		B9CB8AE168CA0F0C5919FB80 /* libPods-baisibudejie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C787648AF5E3046D9B4B57 /* libPods-baisibudejie.a */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,8 @@
 		1206EE41221AFE70005D802D /* YJXTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJXTabBar.m; sourceTree = "<group>"; };
 		1206EE46221B026E005D802D /* UIView+YJXRect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+YJXRect.h"; sourceTree = "<group>"; };
 		1206EE47221B026E005D802D /* UIView+YJXRect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+YJXRect.m"; sourceTree = "<group>"; };
+		121DEF4C221C1E9E00C2BE3F /* UIBarButtonItem+YJXItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+YJXItem.h"; sourceTree = "<group>"; };
+		121DEF4D221C1E9E00C2BE3F /* UIBarButtonItem+YJXItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+YJXItem.m"; sourceTree = "<group>"; };
 		24C787648AF5E3046D9B4B57 /* libPods-baisibudejie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-baisibudejie.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AB7C1593072028C03C50024 /* Pods-baisibudejie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baisibudejie.release.xcconfig"; path = "Pods/Target Support Files/Pods-baisibudejie/Pods-baisibudejie.release.xcconfig"; sourceTree = "<group>"; };
 		CEA74D8997463D092FD541E0 /* Pods-baisibudejie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baisibudejie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-baisibudejie/Pods-baisibudejie.debug.xcconfig"; sourceTree = "<group>"; };
@@ -326,6 +329,8 @@
 			children = (
 				1206EE46221B026E005D802D /* UIView+YJXRect.h */,
 				1206EE47221B026E005D802D /* UIView+YJXRect.m */,
+				121DEF4C221C1E9E00C2BE3F /* UIBarButtonItem+YJXItem.h */,
+				121DEF4D221C1E9E00C2BE3F /* UIBarButtonItem+YJXItem.m */,
 			);
 			path = Gategory;
 			sourceTree = "<group>";
@@ -453,6 +458,7 @@
 				1206EE0022193F9F005D802D /* main.m in Sources */,
 				1206EE42221AFE70005D802D /* YJXTabBar.m in Sources */,
 				1206EE2F221AD839005D802D /* YJXEssenceVC.m in Sources */,
+				121DEF4E221C1E9E00C2BE3F /* UIBarButtonItem+YJXItem.m in Sources */,
 				1206EE48221B026E005D802D /* UIView+YJXRect.m in Sources */,
 				1206EE3E221ADB38005D802D /* YJXNavigationC.m in Sources */,
 				1206EE32221AD868005D802D /* YJXNewVC.m in Sources */,

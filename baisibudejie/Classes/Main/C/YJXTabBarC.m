@@ -40,7 +40,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = UIColor.redColor;
     self.indexFlag = 0;
     [self setupTabBar];
     [self setupAllChildVcs];
@@ -51,6 +50,7 @@
 
 - (void)setupTabBar {
     YJXTabBar *tabBar = [[YJXTabBar alloc] init];
+    [tabBar setTranslucent:NO]; /** 设置tabBar不透明 */
     [self setValue:tabBar forKeyPath:@"tabBar"];
 }
 

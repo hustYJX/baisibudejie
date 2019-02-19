@@ -18,6 +18,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setupNavigationBar];
+}
+
+#pragma mark - 设置导航条
+
+- (void)setupNavigationBar {
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"friendsRecommentIcon"] highlightedImage:[UIImage imageNamed:@"friendsRecommentIcon-click"] target:self action:@selector(friendsRecommentBtnClick)];
+    self.navigationItem.title = @"我的关注";
+}
+
+#pragma mark - 监听推荐按钮的点击
+
+- (void)friendsRecommentBtnClick {
+    
 }
 
 @end

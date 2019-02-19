@@ -18,6 +18,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setupNavigationBar];
+}
+
+#pragma mark - 设置导航条
+- (void)setupNavigationBar {
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"MainTagSubIcon"] highlightedImage:[UIImage imageNamed:@"MainTagSubIconClick"] target:self action:@selector(tagBtnClick)];
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
+}
+
+#pragma mark - 监听标题按钮的点击
+
+- (void)tagBtnClick {
+    
 }
 
 @end
