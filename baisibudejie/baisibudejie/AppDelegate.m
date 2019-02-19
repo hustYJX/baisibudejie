@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "YJXTabBarC.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    /** 设置窗口的跟控制器 */
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = [[YJXTabBarC alloc] init];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

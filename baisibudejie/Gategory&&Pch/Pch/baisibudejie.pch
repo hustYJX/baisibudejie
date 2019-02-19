@@ -1,0 +1,14 @@
+//
+//  baisibudejie.pch
+//  baisibudejie
+//
+//  Created by 尤建峡 on 2019/2/18.
+//  Copyright © 2019 尤建峡. All rights reserved.
+//
+
+#pragma mark - 宏定义
+#define kcolor(r, g, b) [UIColor colorWithRed:(r / 255.0) green:(g / 255.0) blue:(b / 255.0) alpha:1]
+#define kThemeRedColor kcolor(236, 69, 90)
+
+#pragma mark - 分类
+#import "UIView+YJXRect.h"
