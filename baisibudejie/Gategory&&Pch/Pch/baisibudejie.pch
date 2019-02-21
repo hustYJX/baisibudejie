@@ -8,7 +8,9 @@
 
 #pragma mark - 宏定义
 #define kcolor(r, g, b) [UIColor colorWithRed:(r / 255.0) green:(g / 255.0) blue:(b / 255.0) alpha:1]
-#define kThemeRedColor kcolor(236, 69, 90)
+#define kThemeRedColor kcolor(236, 68, 91)
+#define screenH [UIScreen mainScreen].bounds.size.height
+#define screenW [UIScreen mainScreen].bounds.size.width
 
 #pragma mark - 分类
 #import "UIView+YJXRect.h"

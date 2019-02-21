@@ -7,6 +7,7 @@
 //
 
 #import "YJXNewVC.h"
+#import "YJXTagTableVC.h"
 
 @interface YJXNewVC ()
 
@@ -18,6 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = kThemeRedColor;
     [self setupNavigationBar];
 }
 
@@ -30,7 +32,8 @@
 #pragma mark - 监听标题按钮的点击
 
 - (void)tagBtnClick {
-    
+    YJXTagTableVC *tagVc = [[YJXTagTableVC alloc] init];
+    [self.navigationController pushViewController:tagVc animated:YES];
 }
 
 @end

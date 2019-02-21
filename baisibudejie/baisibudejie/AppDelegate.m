@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "YJXTabBarC.h"
+#import "YJXAdVC.h"
 
 @interface AppDelegate ()
 
@@ -17,9 +17,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    /** 设置窗口的跟控制器 */
+    /** 设置窗口的跟控制器为广告控制器 */
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = [[YJXTabBarC alloc] init];
+    self.window.rootViewController = [[YJXAdVC alloc] init];
     [self.window makeKeyAndVisible];
     return YES;
 }
