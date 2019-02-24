@@ -32,6 +32,8 @@
 #pragma mark - 从xib中加载
 
 - (void)awakeFromNib {
+    /** 设置cell的选中样式 */
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
     self.iconImageView.layer.cornerRadius = 30;
     self.iconImageView.layer.masksToBounds = YES;
     [super awakeFromNib];

@@ -17,6 +17,13 @@
 
 @implementation YJXTagHeaderV
 
+#pragma mark - 从xib中加载
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    [self tagBtnClick:self.jokeBtn];
+}
+
 #pragma mark - getter&&setter
 
 - (UIButton *)selectedBtn {
@@ -28,20 +35,10 @@
     return _selectedBtn;
 }
 
-#pragma mark - 加载xib
-
-+ (YJXTagHeaderV *)loadViewFromXib {
-    YJXTagHeaderV *headerV = [[[UINib nibWithNibName:NSStringFromClass([self class]) bundle:nil] instantiateWithOwner:self options:nil] lastObject];
-    [headerV tagBtnClick:headerV.jokeBtn];
-    return headerV;
-}
-
 #pragma mark - 监听标签按钮的点击
 
 - (IBAction)tagBtnClick:(UIButton *)tagBtn {
     self.selectedBtn.selected = NO;
-    tagBtn.layer.cornerRadius = 16;
-    tagBtn.layer.masksToBounds = YES;
     self.selectedBtn.backgroundColor = UIColor.redColor;
     tagBtn.selected = YES;
     tagBtn.backgroundColor = kThemeRedColor;

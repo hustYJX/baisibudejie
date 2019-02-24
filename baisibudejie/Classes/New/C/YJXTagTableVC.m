@@ -12,6 +12,7 @@
 #import "YJXTagM.h"
 #import <MJExtension/MJExtension.h>
 #import "YJXTagCell.h"
+#import <SVProgressHUD.h>
 
 @interface YJXTagTableVC ()<TagHeaderViewDelegate>
 
@@ -28,6 +29,9 @@ static NSString * const ID = @"tagCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [SVProgressHUD showWithStatus:@"正在加载"];
+    self.title = @"推荐关注";
+    /** 注册cell */
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([YJXTagCell class]) bundle:nil] forCellReuseIdentifier:ID];
     self.tableView.rowHeight = 80;
     self.tableView.separatorInset = UIEdgeInsetsZero;
@@ -41,29 +45,15 @@ static NSString * const ID = @"tagCell";
     headerV.delegate = self;
     headerV.frame = CGRectMake(0, 0, self.tableView.yjx_width, 194);
     self.tableView.tableHeaderView = headerV;
+    /** 已进入界面，加载搞笑原创的图片 */
     [self loadTagDataWithUrl:@"http://d.api.budejie.com/subscribe/user/5/0/bsbdjhd-iphone-5.0.5/0-10.json"];
+    self.tableView.tableFooterView = [[UIView alloc] init];
 }
 
+#pragma mark - 不同标签按钮加载不同数据
+
 - (void)tagHeaderView:(YJXTagHeaderV *)tagHeaderView clickedBtn:(UIButton *)clickedBtn {
-    switch (clickedBtn.tag) {
-        case 1: /** 搞笑原创 */
-            [self loadTagDataWithUrl:@"http://d.api.budejie.com/subscribe/user/5/0/bsbdjhd-iphone-5.0.5/0-10.json"];
-            break;
-        case 2: /** 幽默红人 */
-            [self loadTagDataWithUrl:@"http://d.api.budejie.com/subscribe/user/17/0/bsbdjhd-iphone-5.0.5/0-10.json"];
-            break;
-        case 3: /** 生活达人 */
-            [self loadTagDataWithUrl:@"http://d.api.budejie.com/subscribe/user/43/0/bsbdjhd-iphone-5.0.5/0-10.json"];
-            break;
-        case 4: /** 动漫原创 */
-            [self loadTagDataWithUrl:@"http://d.api.budejie.com/subscribe/user/35/0/bsbdjhd-iphone-5.0.5/0-10.json"];
-            break;
-        case 5: /** 音乐频道 */
-            [self loadTagDataWithUrl:@"http://d.api.budejie.com/subscribe/user/33/0/bsbdjhd-iphone-5.0.5/0-10.json"];
-            break;
-        default:
-            break;
-    }
+    [self loadTagDataWithUrl:[NSString stringWithFormat:@"http://d.api.budejie.com/subscribe/user/%ld/0/bsbdjhd-iphone-5.0.5/0-10.json",clickedBtn.tag]];
 }
 
 #pragma mark - 请求推荐标签数据
@@ -71,11 +61,12 @@ static NSString * const ID = @"tagCell";
 - (void)loadTagDataWithUrl:(NSString *)url {
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", @"text/html", nil];
-    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-    [manager GET:url parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [manager GET:url parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        [SVProgressHUD dismiss];
         self.tagArr = [YJXTagM mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
         [self.tableView reloadData];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        [SVProgressHUD dismiss];
         NSLog(@"%@",error);
     }];
 }

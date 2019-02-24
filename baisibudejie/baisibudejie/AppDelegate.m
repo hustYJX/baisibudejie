@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "YJXAdVC.h"
+#import <AFNetworking.h>
 
 @interface AppDelegate ()
 
@@ -15,8 +16,18 @@
 
 @implementation AppDelegate
 
+- (void)testData {
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", @"text/html", nil];
+    [manager GET:@"" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"%@",responseObject);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"%@",error);
+    }];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+//    [self testData];
     /** 设置窗口的跟控制器为广告控制器 */
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = [[YJXAdVC alloc] init];

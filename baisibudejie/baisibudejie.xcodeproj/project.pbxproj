@@ -27,6 +27,15 @@
 		1247F7A1221D5CFD00097951 /* LaunchImage-736.png in Resources */ = {isa = PBXBuildFile; fileRef = 1247F79C221D5CFD00097951 /* LaunchImage-736.png */; };
 		1247F7A2221D5CFD00097951 /* LaunchImage-568.png in Resources */ = {isa = PBXBuildFile; fileRef = 1247F79D221D5CFD00097951 /* LaunchImage-568.png */; };
 		1247F7A5221D672700097951 /* YJXAdM.m in Sources */ = {isa = PBXBuildFile; fileRef = 1247F7A4221D672700097951 /* YJXAdM.m */; };
+		127003CA222268E000F1F859 /* YJXFastLoginV.m in Sources */ = {isa = PBXBuildFile; fileRef = 127003C9222268E000F1F859 /* YJXFastLoginV.m */; };
+		127003CC222268F500F1F859 /* YJXFastLoginV.xib in Resources */ = {isa = PBXBuildFile; fileRef = 127003CB222268F500F1F859 /* YJXFastLoginV.xib */; };
+		127003CF2222704700F1F859 /* YJXFastLoginBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 127003CE2222704700F1F859 /* YJXFastLoginBtn.m */; };
+		12ABD3AA2221672F00208DEB /* UIView+YJXFromXib.m in Sources */ = {isa = PBXBuildFile; fileRef = 12ABD3A92221672F00208DEB /* UIView+YJXFromXib.m */; };
+		12ABD3AC2221889700208DEB /* YJXFriendTrendVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12ABD3AB2221889700208DEB /* YJXFriendTrendVC.xib */; };
+		12ABD3B022218BC200208DEB /* YJXLoginRegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 12ABD3AE22218BC200208DEB /* YJXLoginRegisterVC.m */; };
+		12ABD3B122218BC200208DEB /* YJXLoginRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12ABD3AF22218BC200208DEB /* YJXLoginRegisterVC.xib */; };
+		12ABD3B42221906B00208DEB /* YJXLoginRegisterV.m in Sources */ = {isa = PBXBuildFile; fileRef = 12ABD3B32221906B00208DEB /* YJXLoginRegisterV.m */; };
+		12ABD3B62221908300208DEB /* YJXLoginRegisterV.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12ABD3B52221908300208DEB /* YJXLoginRegisterV.xib */; };
 		12CBF634221EA5C700B16950 /* YJXTagTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CBF633221EA5C700B16950 /* YJXTagTableVC.m */; };
 		12CBF637221EB2D500B16950 /* YJXTagHeaderV.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CBF636221EB2D500B16950 /* YJXTagHeaderV.m */; };
 		12CBF63F221EB78500B16950 /* YJXTagHeaderV.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12CBF63E221EB78500B16950 /* YJXTagHeaderV.xib */; };
@@ -73,6 +82,20 @@
 		1247F79D221D5CFD00097951 /* LaunchImage-568.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568.png"; sourceTree = "<group>"; };
 		1247F7A3221D672700097951 /* YJXAdM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJXAdM.h; sourceTree = "<group>"; };
 		1247F7A4221D672700097951 /* YJXAdM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJXAdM.m; sourceTree = "<group>"; };
+		127003C8222268E000F1F859 /* YJXFastLoginV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJXFastLoginV.h; sourceTree = "<group>"; };
+		127003C9222268E000F1F859 /* YJXFastLoginV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJXFastLoginV.m; sourceTree = "<group>"; };
+		127003CB222268F500F1F859 /* YJXFastLoginV.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YJXFastLoginV.xib; sourceTree = "<group>"; };
+		127003CD2222704700F1F859 /* YJXFastLoginBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJXFastLoginBtn.h; sourceTree = "<group>"; };
+		127003CE2222704700F1F859 /* YJXFastLoginBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJXFastLoginBtn.m; sourceTree = "<group>"; };
+		12ABD3A82221672F00208DEB /* UIView+YJXFromXib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+YJXFromXib.h"; sourceTree = "<group>"; };
+		12ABD3A92221672F00208DEB /* UIView+YJXFromXib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+YJXFromXib.m"; sourceTree = "<group>"; };
+		12ABD3AB2221889700208DEB /* YJXFriendTrendVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YJXFriendTrendVC.xib; sourceTree = "<group>"; };
+		12ABD3AD22218BC200208DEB /* YJXLoginRegisterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJXLoginRegisterVC.h; sourceTree = "<group>"; };
+		12ABD3AE22218BC200208DEB /* YJXLoginRegisterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJXLoginRegisterVC.m; sourceTree = "<group>"; };
+		12ABD3AF22218BC200208DEB /* YJXLoginRegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YJXLoginRegisterVC.xib; sourceTree = "<group>"; };
+		12ABD3B22221906B00208DEB /* YJXLoginRegisterV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJXLoginRegisterV.h; sourceTree = "<group>"; };
+		12ABD3B32221906B00208DEB /* YJXLoginRegisterV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJXLoginRegisterV.m; sourceTree = "<group>"; };
+		12ABD3B52221908300208DEB /* YJXLoginRegisterV.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YJXLoginRegisterV.xib; sourceTree = "<group>"; };
 		12CBF632221EA5C700B16950 /* YJXTagTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJXTagTableVC.h; sourceTree = "<group>"; };
 		12CBF633221EA5C700B16950 /* YJXTagTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJXTagTableVC.m; sourceTree = "<group>"; };
 		12CBF635221EB2D500B16950 /* YJXTagHeaderV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJXTagHeaderV.h; sourceTree = "<group>"; };
@@ -179,6 +202,10 @@
 			children = (
 				1206EE36221AD8CF005D802D /* YJXFriendTrendVC.h */,
 				1206EE37221AD8CF005D802D /* YJXFriendTrendVC.m */,
+				12ABD3AB2221889700208DEB /* YJXFriendTrendVC.xib */,
+				12ABD3AD22218BC200208DEB /* YJXLoginRegisterVC.h */,
+				12ABD3AE22218BC200208DEB /* YJXLoginRegisterVC.m */,
+				12ABD3AF22218BC200208DEB /* YJXLoginRegisterVC.xib */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -186,6 +213,14 @@
 		1206EE19221AD7B6005D802D /* V */ = {
 			isa = PBXGroup;
 			children = (
+				12ABD3B22221906B00208DEB /* YJXLoginRegisterV.h */,
+				12ABD3B32221906B00208DEB /* YJXLoginRegisterV.m */,
+				12ABD3B52221908300208DEB /* YJXLoginRegisterV.xib */,
+				127003C8222268E000F1F859 /* YJXFastLoginV.h */,
+				127003C9222268E000F1F859 /* YJXFastLoginV.m */,
+				127003CB222268F500F1F859 /* YJXFastLoginV.xib */,
+				127003CD2222704700F1F859 /* YJXFastLoginBtn.h */,
+				127003CE2222704700F1F859 /* YJXFastLoginBtn.m */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -375,6 +410,8 @@
 				1206EE47221B026E005D802D /* UIView+YJXRect.m */,
 				121DEF4C221C1E9E00C2BE3F /* UIBarButtonItem+YJXItem.h */,
 				121DEF4D221C1E9E00C2BE3F /* UIBarButtonItem+YJXItem.m */,
+				12ABD3A82221672F00208DEB /* UIView+YJXFromXib.h */,
+				12ABD3A92221672F00208DEB /* UIView+YJXFromXib.m */,
 			);
 			path = Gategory;
 			sourceTree = "<group>";
@@ -462,6 +499,7 @@
 				1206EDE922193F9E005D802D /* Sources */,
 				1206EDEA22193F9E005D802D /* Frameworks */,
 				1206EDEB22193F9E005D802D /* Resources */,
+				0EF7D55AEC6C02264FCF81BD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -513,10 +551,14 @@
 				1247F7A2221D5CFD00097951 /* LaunchImage-568.png in Resources */,
 				1206EDFA22193F9F005D802D /* Assets.xcassets in Resources */,
 				1247F797221D4F2100097951 /* YJXAdVC.xib in Resources */,
+				12ABD3B122218BC200208DEB /* YJXLoginRegisterVC.xib in Resources */,
 				1247F79F221D5CFD00097951 /* LaunchImage-667.png in Resources */,
 				1247F7A1221D5CFD00097951 /* LaunchImage-736.png in Resources */,
+				127003CC222268F500F1F859 /* YJXFastLoginV.xib in Resources */,
+				12ABD3B62221908300208DEB /* YJXLoginRegisterV.xib in Resources */,
 				1247F7A0221D5CFD00097951 /* LaunchImage-812.png in Resources */,
 				12CBF647221ECA4500B16950 /* YJXTagCell.xib in Resources */,
+				12ABD3AC2221889700208DEB /* YJXFriendTrendVC.xib in Resources */,
 				12CBF63F221EB78500B16950 /* YJXTagHeaderV.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -524,6 +566,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0EF7D55AEC6C02264FCF81BD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-baisibudejie/Pods-baisibudejie-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-baisibudejie/Pods-baisibudejie-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		42A9B85C749FCD2ECAC97DC6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -563,13 +627,18 @@
 				121DEF4E221C1E9E00C2BE3F /* UIBarButtonItem+YJXItem.m in Sources */,
 				1206EE48221B026E005D802D /* UIView+YJXRect.m in Sources */,
 				1206EE3E221ADB38005D802D /* YJXNavigationC.m in Sources */,
+				127003CF2222704700F1F859 /* YJXFastLoginBtn.m in Sources */,
 				12CBF642221EC72300B16950 /* YJXTagM.m in Sources */,
 				1206EE32221AD868005D802D /* YJXNewVC.m in Sources */,
+				12ABD3AA2221672F00208DEB /* UIView+YJXFromXib.m in Sources */,
+				12ABD3B022218BC200208DEB /* YJXLoginRegisterVC.m in Sources */,
 				1247F7A5221D672700097951 /* YJXAdM.m in Sources */,
 				1206EDF222193F9E005D802D /* AppDelegate.m in Sources */,
+				127003CA222268E000F1F859 /* YJXFastLoginV.m in Sources */,
 				1206EE3B221AD8EC005D802D /* YJXMeVC.m in Sources */,
 				1206EE35221AD893005D802D /* YJXPublishVC.m in Sources */,
 				1206EE38221AD8CF005D802D /* YJXFriendTrendVC.m in Sources */,
+				12ABD3B42221906B00208DEB /* YJXLoginRegisterV.m in Sources */,
 				1206EE142219477A005D802D /* YJXTabBarC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -699,7 +768,7 @@
 				DEVELOPMENT_TEAM = 6434D3QBX9;
 				GCC_PREFIX_HEADER = "/Users/hustyjx/Desktop/baisibudejie/baisibudejie/Gategory&&Pch/Pch/baisibudejie.pch";
 				INFOPLIST_FILE = baisibudejie/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -720,7 +789,7 @@
 				DEVELOPMENT_TEAM = 6434D3QBX9;
 				GCC_PREFIX_HEADER = "/Users/hustyjx/Desktop/baisibudejie/baisibudejie/Gategory&&Pch/Pch/baisibudejie.pch";
 				INFOPLIST_FILE = baisibudejie/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

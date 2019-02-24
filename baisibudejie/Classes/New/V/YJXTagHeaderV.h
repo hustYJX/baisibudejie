@@ -20,7 +20,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface YJXTagHeaderV : UIView
 
 @property (nonatomic, weak) id<TagHeaderViewDelegate> delegate;
-+ (YJXTagHeaderV *)loadViewFromXib;
 
 @end
 

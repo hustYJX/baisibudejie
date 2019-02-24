@@ -7,6 +7,7 @@
 //
 
 #import "YJXFriendTrendVC.h"
+#import "YJXLoginRegisterVC.h"
 
 @interface YJXFriendTrendVC ()
 
@@ -32,6 +33,13 @@
 
 - (void)friendsRecommentBtnClick {
     
+}
+
+#pragma mark - 监听登陆注册按钮的点击
+
+- (IBAction)loginRegisterBtnClick:(UIButton *)sender {
+    YJXLoginRegisterVC *loginRegisterVc = [[YJXLoginRegisterVC alloc] init];
+    [self presentViewController:loginRegisterVc animated:YES completion:nil];
 }
 
 @end
